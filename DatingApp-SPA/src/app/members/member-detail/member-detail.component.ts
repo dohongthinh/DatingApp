@@ -22,13 +22,12 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.subscribe(data => {
-      // tslint:disable-next-line: no-string-literal
       this.user = data['user'];
     });
 
     this.galleryOptions = [
       {
-        width: '500ppx',
+        width: '500px',
         height: '500px',
         imagePercent: 100,
         thumbnailsColumns: 4,
